@@ -1,1 +1,1 @@
-* * * * * python3 /app/script.py > /proc/1/fd/1 2>/proc/1/fd/2
+* * * * * /usr/local/bin/python /app/script.py > /proc/1/fd/1 2>/proc/1/fd/2

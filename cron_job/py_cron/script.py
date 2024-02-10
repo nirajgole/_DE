@@ -32,7 +32,7 @@ dataset = [
 # DB connection
 if dataset:
     conn = connect(
-        host="0.0.0.0", database="coindb", user="docker", password=DB_PASSWORD
+        host="database", database="coindb", user="docker", password=DB_PASSWORD
     )
     cur = conn.cursor()
 

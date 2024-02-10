@@ -18,3 +18,10 @@ services:
       - database
     ports:
       - 8080:8080
+
+  app:
+    image: py-cron
+    depends_on:
+      - database
+
+      # docker build --pull -t test . && docker run --rm -it test
