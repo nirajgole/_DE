@@ -1,14 +1,12 @@
-FROM alpine:3.19
+FROM python:3.10
+RUN apt-get update && apt-get -y install cron vim && apt-get clean
+WORKDIR /app
+COPY crontab /etc/cron.d/crontab
+COPY requirements.txt /app/
+RUN pip install --requirement /app/requirements.txt
+COPY script.py /app/
+RUN chmod +x /etc/cron.d/crontab
+RUN /usr/bin/crontab /etc/cron.d/crontab
 
-# Install python/pip
-# ENV PYTHONUNBUFFERED=1
-# RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
-# RUN python3 -m ensurepip
-# RUN pip3 install --no-cache --upgrade pip setuptools
-
-RUN apk -U upgrade
-RUN apk add --update --no-cache python3
-COPY script.py /usr/
-RUN chmod +x /usr/script.py
-ADD root /var/spool/cron/crontabs/root
-CMD ["/usr/sbin/crond","-f","-l","8"]
+# run crond as main process of container
+CMD ["cron", "-f"]

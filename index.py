@@ -73,3 +73,5 @@ if dataset:
     execute_values(cur, query.as_string(cur), dataset)
 
     conn.commit()
+    cur.close()
+    conn.close()
