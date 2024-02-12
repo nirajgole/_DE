@@ -23,5 +23,3 @@ services:
     image: py-cron
     depends_on:
       - database
-
-      # docker build --pull -t test . && docker run --rm -it test
