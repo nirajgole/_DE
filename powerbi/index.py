@@ -5,7 +5,6 @@ from psycopg2.extras import execute_values
 API_DOCS = "https://docs.coinapi.io/market-data/rest-api/exchange-rates/exchange-rates-get-all-current-rates"
 API_KEY = "F378990E-7EBB-4E52-8DBD-034132475264"
 BASE_URL = "https://rest.coinapi.io"
-DB_PASSWORD = "root"
 
 # API
 url = f"{BASE_URL}/v1/assets"
@@ -32,7 +31,7 @@ dataset = [
 # DB connection
 if dataset:
     conn = connect(
-        host="localhost", database="test", user="postgres", password=DB_PASSWORD
+        host="localhost", database="test", user="postgres", password="root"
     )
     cur = conn.cursor()
 

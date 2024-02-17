@@ -23,3 +23,10 @@ services:
     image: py-cron
     depends_on:
       - database
+
+  web-app:
+    image: web-app
+    depends_on:
+      - database
+    ports:
+      - 8501:8501
