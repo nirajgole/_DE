@@ -2,7 +2,7 @@ FROM python:3.10
 RUN apt-get update && apt-get -y install cron && apt-get clean
 WORKDIR /app
 COPY requirements.txt /app/requirements.txt
-COPY script.py /app/script.py
+COPY rates.py /app/rates.py
 COPY crontab /etc/cron.d/crontab
 RUN pip install --upgrade pip && pip install -r /app/requirements.txt
 RUN chmod +x /etc/cron.d/crontab

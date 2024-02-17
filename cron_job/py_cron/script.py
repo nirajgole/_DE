@@ -44,7 +44,7 @@ if dataset:
         asset_id VARCHAR(50) PRIMARY KEY,
         name VARCHAR(100),
         type_is_crypto smallint,
-        price_usd FLOAT,
+        price_usd numeric,
         data_start DATE,
         data_end DATE,
         volume_1hrs_usd decimal,
