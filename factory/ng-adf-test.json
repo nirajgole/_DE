@@ -1,0 +1,9 @@
+{
+	"name": "ng-adf-test",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f947488d-1e91-4fc9-b760-dfdb03f6378d",
+		"tenantId": "0427cf5e-7857-445f-8cf9-2c76a15b76fe"
+	}
+}
