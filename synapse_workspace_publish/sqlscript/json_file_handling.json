@@ -1,0 +1,17 @@
+{
+	"name": "json_file_handling",
+	"properties": {
+		"content": {
+			"query": "-- This is auto-generated code\nSELECT TOP 100\n        JSON_VALUE (jsonContent, '$.id') AS id,\n        JSON_VALUE (jsonContent, '$.first_name') AS first_name,\n        JSON_VALUE (jsonContent, '$.last_name') AS last_name,\n        JSON_VALUE (jsonContent, '$.email') AS email,\n        JSON_VALUE (jsonContent, '$.gender') AS gender\nFROM\n    OPENROWSET(\n        BULK 'https://datalakes4rvjic.dfs.core.windows.net/files/json_data/MOCK_DATA.json',\n        FORMAT = 'CSV',\n        FIELDQUOTE = '0x0b',\n        FIELDTERMINATOR ='0x0b',\n        ROWTERMINATOR = '0x0a' -- line seperated json data\n    )\n    WITH (\n        jsonContent varchar(MAX)\n    ) AS [result]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
