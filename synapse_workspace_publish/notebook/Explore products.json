@@ -1,0 +1,389 @@
+{
+	"name": "Explore products",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "sparks4rvjic",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "6d5c53d3-08c6-4462-a847-5765f50dc9d0"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"e6ca1e69-3d40-42f3-9709-92527f20270b": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "771",
+										"1": "Mountain-100 Silver, 38",
+										"2": "Mountain Bikes",
+										"3": "3399.9900"
+									},
+									{
+										"0": "772",
+										"1": "Mountain-100 Silver, 42",
+										"2": "Mountain Bikes",
+										"3": "3399.9900"
+									},
+									{
+										"0": "773",
+										"1": "Mountain-100 Silver, 44",
+										"2": "Mountain Bikes",
+										"3": "3399.9900"
+									},
+									{
+										"0": "774",
+										"1": "Mountain-100 Silver, 48",
+										"2": "Mountain Bikes",
+										"3": "3399.9900"
+									},
+									{
+										"0": "775",
+										"1": "Mountain-100 Black, 38",
+										"2": "Mountain Bikes",
+										"3": "3374.9900"
+									},
+									{
+										"0": "776",
+										"1": "Mountain-100 Black, 42",
+										"2": "Mountain Bikes",
+										"3": "3374.9900"
+									},
+									{
+										"0": "777",
+										"1": "Mountain-100 Black, 44",
+										"2": "Mountain Bikes",
+										"3": "3374.9900"
+									},
+									{
+										"0": "778",
+										"1": "Mountain-100 Black, 48",
+										"2": "Mountain Bikes",
+										"3": "3374.9900"
+									},
+									{
+										"0": "779",
+										"1": "Mountain-200 Silver, 38",
+										"2": "Mountain Bikes",
+										"3": "2319.9900"
+									},
+									{
+										"0": "780",
+										"1": "Mountain-200 Silver, 42",
+										"2": "Mountain Bikes",
+										"3": "2319.9900"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "ProductID",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "ProductName",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Category",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "ListPrice",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"44828450-41ed-4e5c-85d2-3023e2424f36": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Headsets",
+										"1": "3"
+									},
+									{
+										"0": "Wheels",
+										"1": "14"
+									},
+									{
+										"0": "Bottom Brackets",
+										"1": "3"
+									},
+									{
+										"0": "Touring Frames",
+										"1": "18"
+									},
+									{
+										"0": "Mountain Bikes",
+										"1": "32"
+									},
+									{
+										"0": "Pedals",
+										"1": "7"
+									},
+									{
+										"0": "Derailleurs",
+										"1": "2"
+									},
+									{
+										"0": "Chains",
+										"1": "1"
+									},
+									{
+										"0": "Pumps",
+										"1": "2"
+									},
+									{
+										"0": "Hydration Packs",
+										"1": "1"
+									},
+									{
+										"0": "Road Bikes",
+										"1": "43"
+									},
+									{
+										"0": "Bottles and Cages",
+										"1": "3"
+									},
+									{
+										"0": "Road Frames",
+										"1": "33"
+									},
+									{
+										"0": "Forks",
+										"1": "3"
+									},
+									{
+										"0": "Vests",
+										"1": "3"
+									},
+									{
+										"0": "Brakes",
+										"1": "2"
+									},
+									{
+										"0": "Helmets",
+										"1": "3"
+									},
+									{
+										"0": "Saddles",
+										"1": "9"
+									},
+									{
+										"0": "Tights",
+										"1": "3"
+									},
+									{
+										"0": "Jerseys",
+										"1": "8"
+									},
+									{
+										"0": "Gloves",
+										"1": "6"
+									},
+									{
+										"0": "Panniers",
+										"1": "1"
+									},
+									{
+										"0": "Touring Bikes",
+										"1": "22"
+									},
+									{
+										"0": "Bike Racks",
+										"1": "1"
+									},
+									{
+										"0": "Fenders",
+										"1": "1"
+									},
+									{
+										"0": "Caps",
+										"1": "1"
+									},
+									{
+										"0": "Lights",
+										"1": "3"
+									},
+									{
+										"0": "Cranksets",
+										"1": "3"
+									},
+									{
+										"0": "Shorts",
+										"1": "7"
+									},
+									{
+										"0": "Locks",
+										"1": "1"
+									},
+									{
+										"0": "Bike Stands",
+										"1": "1"
+									},
+									{
+										"0": "Bib-Shorts",
+										"1": "3"
+									},
+									{
+										"0": "Handlebars",
+										"1": "8"
+									},
+									{
+										"0": "Mountain Frames",
+										"1": "28"
+									},
+									{
+										"0": "Tires and Tubes",
+										"1": "11"
+									},
+									{
+										"0": "Cleaners",
+										"1": "1"
+									},
+									{
+										"0": "Socks",
+										"1": "4"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Category",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count",
+										"type": "bigint"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/9aec6541-3c93-4733-b997-7e1821b29c95/resourceGroups/dp203-s4rvjic/providers/Microsoft.Synapse/workspaces/synapses4rvjic/bigDataPools/sparks4rvjic",
+				"name": "sparks4rvjic",
+				"type": "Spark",
+				"endpoint": "https://synapses4rvjic.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparks4rvjic",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://files@datalakes4rvjic.dfs.core.windows.net/product_data/products.csv', format='csv', header=True)\r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"df_counts = df.groupby(df.Category).count()\r\n",
+					"display(df_counts)"
+				],
+				"execution_count": 9
+			}
+		]
+	}
+}
