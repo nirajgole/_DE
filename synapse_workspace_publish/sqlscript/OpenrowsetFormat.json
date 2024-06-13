@@ -2,7 +2,7 @@
 	"name": "OpenrowsetFormat",
 	"properties": {
 		"content": {
-			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://datalakes4rvjic.dfs.core.windows.net/files/product_data/products.csv',\n        FORMAT = 'CSV',\n        HEADER_ROW = TRUE,\n        PARSER_VERSION = '2.0')\n    WITH (\n        product_id int 1,\n        product_name VARCHAR(200) collate Latin1_General_100_CI_AI_SC_UTF8 2,\n        category VARCHAR(100) collate Latin1_General_100_CI_AI_SC_UTF8 3,\n        list_price DECIMAL(9,2) 4\n    ) AS rows\n\n    \n",
+			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://datalakes4rvjic.dfs.core.windows.net/files/product_data/products.csv',\n        FORMAT = 'CSV',\n        HEADER_ROW = TRUE,\n        PARSER_VERSION = '2.0')\n    WITH (\n        product_id int 1,\n        product_name VARCHAR(200) collate Latin1_General_100_CI_AI_SC_UTF8 2,\n        category VARCHAR(100) collate Latin1_General_100_CI_AI_SC_UTF8 3,\n        list_price DECIMAL(9,2) 4\n    ) AS rows\n\n    \n",
 			"metadata": {
 				"language": "sql"
 			},
